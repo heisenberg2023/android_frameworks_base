@@ -6094,6 +6094,13 @@ public final class Settings {
         @Readable
         public static final String VIBRATE_ON_DISCONNECT = "vibrate_on_disconnect";
 
+         /**
+         * Volume rocker wake
+         * @hide
+         */
+        @Readable
+        public static final String VOLUME_ROCKER_WAKE = "volume_rocker_wake";
+
         /**
          * Whether to show data usage in qs footer
          * @hide

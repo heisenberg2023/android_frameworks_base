@@ -830,6 +830,10 @@ public final class SystemServer implements Dumpable {
                         uptimeMillis);
             }
 
+            Slog.i("EverestOS",
+                "Welcome to EverestOS! We believe that you'll love it. " +
+                "Ready to... uh... T!");
+
             // In case the runtime switched since last boot (such as when
             // the old runtime was removed in an OTA), set the system
             // property so that it is in sync. We can't do this in

@@ -6118,6 +6118,18 @@ public final class Settings {
         public static final String STATUS_BAR_CLOCK_AUTO_HIDE_SDURATION = "status_bar_clock_auto_hide_sduration";
 
         /**
+         * Wheter to show network traffic indicator in statusbar
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_STATE = "network_traffic_state";
+
+        /**
+         * Network traffic inactivity threshold
+         * @hide
+         */
+        public static final String NETWORK_TRAFFIC_AUTOHIDE_THRESHOLD = "network_traffic_autohide_threshold";
+
+        /**
          * Statusbar clock background
          * 0 - hide accented chip  (default)
          * 1 - show accented chip

@@ -132,4 +132,7 @@
     <!-- Island -->
     <string name="now_playing_on">Now Playing on %1$s</string>
     <string name="by_artist">%1$s by %2$s</string>
+
+     <!-- Name of the volte/vowifi status bar icon. -->
+     <string name="status_bar_ims">VoLTE/VoWiFi</string>
 </resources>

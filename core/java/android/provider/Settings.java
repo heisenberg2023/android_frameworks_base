@@ -7029,6 +7029,12 @@ public final class Settings {
                 "lockscreen_quick_unlock_control";
 
         /**
+         * Force full screen for devices with cutout
+         * @hide
+         */
+        public static final String FORCE_FULLSCREEN_CUTOUT_APPS = "force_full_screen_cutout_apps";
+
+        /**
          * These are all public system settings
          *
          * @hide
@@ -7177,6 +7183,7 @@ public final class Settings {
             PRIVATE_SETTINGS.add(STATUSBAR_TOP_PADDING);
             PRIVATE_SETTINGS.add(NAV_BAR_COMPACT_LAYOUT);
             PRIVATE_SETTINGS.add(NAVIGATION_BAR_IME_SPACE);
+            PRIVATE_SETTINGS.add(FORCE_FULLSCREEN_CUTOUT_APPS);
         }
 
         /**

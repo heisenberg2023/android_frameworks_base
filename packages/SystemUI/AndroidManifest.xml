@@ -515,7 +515,7 @@
         </activity-alias>
 
         <activity android:name=".tuner.StatusbarItemsActivity"
-                  android:theme="@style/ExTunerSettings"
+                  android:theme="@style/Theme.SubSettingsBase"
                   android:label="@string/status_bar_items_title"
                   android:process=":tuner"
                   android:parentActivityName="com.everest.settings.fragments.StatusBar"

@@ -6792,6 +6792,24 @@ public final class Settings {
         public static final String POCKET_JUDGE = "pocket_judge";
 
         /**
+         * Statusbar left padding
+         * @hide
+         */
+        public static final String STATUSBAR_LEFT_PADDING = "statusbar_left_padding";
+
+        /**
+         * Statusbar right padding
+         * @hide
+         */
+        public static final String STATUSBAR_RIGHT_PADDING = "statusbar_right_padding";
+
+        /**
+         * Statusbar top padding
+         * @hide
+         */
+        public static final String STATUSBAR_TOP_PADDING = "statusbar_top_padding";
+
+        /**
          * These are all public system settings
          *
          * @hide
@@ -6935,6 +6953,9 @@ public final class Settings {
             PRIVATE_SETTINGS.add(LS_MEDIA_ARTWORK_FADE_PERCENT);
             PRIVATE_SETTINGS.add(AMBIENT_TEXT_COLOR);
             PRIVATE_SETTINGS.add(AMBIENT_TEXT_TYPE_COLOR);
+            PRIVATE_SETTINGS.add(STATUSBAR_LEFT_PADDING);
+            PRIVATE_SETTINGS.add(STATUSBAR_RIGHT_PADDING);
+            PRIVATE_SETTINGS.add(STATUSBAR_TOP_PADDING);
         }
 
         /**

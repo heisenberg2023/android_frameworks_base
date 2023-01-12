@@ -216,6 +216,7 @@ public class KeyguardIndicationController {
     private String mMessageToShowOnScreenOn;
 
     private IBatteryPropertiesRegistrar mBatteryPropertiesRegistrar;
+    private boolean mAlternateFastchargeInfoUpdate;
 
     private KeyguardUpdateMonitorCallback mUpdateMonitorCallback;
 
@@ -368,6 +369,8 @@ public class KeyguardIndicationController {
         mBatteryPropertiesRegistrar =
                     IBatteryPropertiesRegistrar.Stub.asInterface(
                     ServiceManager.getService("batteryproperties"));
+        mAlternateFastchargeInfoUpdate =
+                    mContext.getResources().getBoolean(R.bool.config_alternateFastchargeInfoUpdate);
     }
 
     public void setIndicationArea(ViewGroup indicationArea) {
@@ -1211,7 +1214,8 @@ public class KeyguardIndicationController {
                 mKeyguardLogger.log(TAG, ERROR, "Error calling IBatteryStats", e);
                 mChargingTimeRemaining = -1;
             }
-            if (wasPluggedIn != mPowerPluggedIn) {
+            
+            if ((wasPluggedIn != mPowerPluggedIn) && mAlternateFastchargeInfoUpdate) {
                 if (mPowerPluggedIn) {
                     mUpdateInfo.run();
                 } else {

@@ -4724,6 +4724,7 @@ class Task extends TaskFragment {
         }
         if (top.isAttached()) {
             top.setWindowingMode(WINDOWING_MODE_UNDEFINED);
+            top.mWaitForEnteringPinnedMode = false;
         }
     }
 
